@@ -30,7 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+PATH_PROJECT = "/home/saurabh/Django-Projects/mysite"
 # Application definition
 
 INSTALLED_APPS = [
@@ -59,7 +59,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [PATH_PROJECT+'/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
